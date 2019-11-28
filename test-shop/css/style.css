@@ -7,6 +7,11 @@ body {
   color: gray;
   font-weight: 300;
   font-size: 1rem; }
+@media screen and (max-width:480px){
+  body {
+    font-size:80%; // achicamos la fuente en pantallas pequeñas
+  }
+}
 
 ::-moz-selection {
   background: #000;
@@ -41,6 +46,13 @@ h1, h2, h3, h4, h5,
 
 .color-white-opacity-5 {
   color: rgba(255, 255, 255, 0.5); }
+
+#imagen {
+  /*margin-top: 3px;*/
+  /*padding-right: 79px;*/
+  margin: 0 auto;
+    margin-top: -100px;
+}
 
 .site-wrap:before {
   display: none;
@@ -148,7 +160,9 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 991.98px) {
   .img-md-fluid {
-    max-width: 100%; } }
+    max-width: 100%;
+
+  } }
 
 @media (max-width: 991.98px) {
   .display-1, .display-3 {
@@ -249,7 +263,7 @@ h1, h2, h3, h4, h5,
         padding-left: 0; }
       .site-navbar .site-navigation .site-menu > li > a {
         text-transform: uppercase;
-        font-size: .8rem;
+        font-size: 1.1rem;
         letter-spacing: .05rem;
         font-weight: 400;
         display: inline-block;
@@ -1508,8 +1522,8 @@ h1, h2, h3, h4, h5,
   position: relative; }
   .block-16 figure .play-button {
     position: absolute;
-    top: 50%;
-    left: 21%;
+    top: 54%;
+    left: 41%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
